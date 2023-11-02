@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>16.0</VCProjectVersion>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectGuid>{50d7bb80-86b0-4386-b97c-1eeadee52b6b}</ProjectGuid>
+    <RootNamespace>HelloWorld</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="2.0标识符命名规则.cpp" />
+    <ClCompile Include="2.1整型.cpp" />
+    <ClCompile Include="2.2sizeof关键字.cpp" />
+    <ClCompile Include="2.3浮点型（实型）.cpp" />
+    <ClCompile Include="2.4字符型.cpp" />
+    <ClCompile Include="2.5转义字符.cpp" />
+    <ClCompile Include="2.6字符串型.cpp" />
+    <ClCompile Include="2.7布尔类型.cpp" />
+    <ClCompile Include="2.8数据输入.cpp" />
+    <ClCompile Include="3.0运算符-加减乘除.cpp" />
+    <ClCompile Include="3.1取模运算.cpp" />
+    <ClCompile Include="3.2递增递减运算符.cpp" />
+    <ClCompile Include="3.3赋值.cpp" />
+    <ClCompile Include="3.4比较运算符.cpp" />
+    <ClCompile Include="3.5逻辑运算符.cpp" />
+    <ClCompile Include="4.0选择型结构if单行.cpp" />
+    <ClCompile Include="4.1选择性结构if多行.cpp" />
+    <ClCompile Include="4.2选择结构if多条件语句.cpp" />
+    <ClCompile Include="4.3三只小猪称体重.cpp" />
+    <ClCompile Include="4.4三目运算符.cpp" />
+    <ClCompile Include="4.5switch语句.cpp" />
+    <ClCompile Include="4.6.4.for循环.cpp" />
+    <ClCompile Include="4.6.5敲桌子练习.cpp" />
+    <ClCompile Include="4.6.6嵌套循环.cpp" />
+    <ClCompile Include="4.6.7乘法口诀表练习.cpp" />
+    <ClCompile Include="4.6循环结构.cpp" />
+    <ClCompile Include="4..6.2猜字游戏.cpp" />
+    <ClCompile Include="4.6.3练习水仙花数.cpp" />
+    <ClCompile Include="4.6.1dowhile.cpp" />
+    <ClCompile Include="4.7.1continue语句.cpp" />
+    <ClCompile Include="4.7.2.cpp" />
+    <ClCompile Include="4.7跳转语句.cpp" />
+    <ClCompile Include="5.0数组定义方式.cpp" />
+    <ClCompile Include="5.1.1数组练习.cpp" />
+    <ClCompile Include="5.1.2冒泡排序.cpp" />
+    <ClCompile Include="5.1一维数组-数组名.cpp" />
+    <ClCompile Include="5.2.1二维数组名.cpp" />
+    <ClCompile Include="5.2.2考试成绩练习.cpp" />
+    <ClCompile Include="5.2二维数组定义.cpp" />
+    <ClCompile Include="6.0函数.cpp" />
+    <ClCompile Include="6.1函数调用.cpp" />
+    <ClCompile Include="6.2值传递.cpp" />
+    <ClCompile Include="6.3函数常见样式.cpp" />
+    <ClCompile Include="6.4函数声明.cpp" />
+    <ClCompile Include="6.5函数的分文件编写.cpp" />
+    <ClCompile Include="7.1指针所占用内存空间大小.cpp" />
+    <ClCompile Include="7.2空指针和野指针.cpp" />
+    <ClCompile Include="7.3const修饰指针.cpp" />
+    <ClCompile Include="7.4指针和数组.cpp" />
+    <ClCompile Include="7.5指针和函数.cpp" />
+    <ClCompile Include="7.6指针配合数组和函数案例.cpp" />
+    <ClCompile Include="7.指针定义.cpp" />
+    <ClCompile Include="8.0结构体定义.cpp" />
+    <ClCompile Include="8.1结构体数组.cpp" />
+    <ClCompile Include="8.2结构体和指针.cpp" />
+    <ClCompile Include="8.3结构体嵌套.cpp" />
+    <ClCompile Include="8.4结构体做值传递.cpp" />
+    <ClCompile Include="8.6三个老师带五个学生的故事.cpp" />
+    <ClCompile Include="8.5结构体做函数参数.cpp" />
+    <ClCompile Include="8.7结构体案例2.cpp" />
+    <ClCompile Include="Helloworld.cpp" />
+    <ClCompile Include="swap.cpp" />
+    <ClCompile Include="宏常量.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="swap.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
